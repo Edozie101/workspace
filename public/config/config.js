@@ -22,7 +22,7 @@ if ("geolocation" in navigator) {
 //     }).addTo(map);
     
 L.tileLayer('https://mts1.google.com/vt/lyrs=m@186112443&hl=x-local&src=app&x={x}&y={y}&z={z}&s=Galile', {
-	attribution: 'Map data &copy; <a href="https://maps.google.com">Google</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+	attribution: 'Map data &copy; <a href="https://maps.google.com">Google</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, By Edozie Izegbu for 2 J\'s Auto Transport',
 	maxZoom: 20,
 	minZoom: 5,
 	worldCopyJump: false
