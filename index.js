@@ -7,6 +7,8 @@ var io = require('socket.io')(server);
 var drivers = {};
 var service = {};
 var bookid;
+const PORT = process.env.PORT || 5000
+
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
@@ -183,6 +185,6 @@ function distance(lat1, lon1, lat2, lon2) {
 	return 12742 * Math.asin(Math.sqrt(a));
 }
 
-server.listen(8080,'0.0.0.0', function() {
+server.listen(PORT,'0.0.0.0', function() {
 	console.log('Server started at ' + (new Date().toLocaleString().substr(10, 12)));
 });
